@@ -28,7 +28,8 @@ class SecurityView extends Component {
       title: formatMessage({ id: 'app.settings.security.password' }, {}),
       description: (
         <Fragment>
-          {formatMessage({ id: 'app.settings.security.password-description' })}：
+          {formatMessage({ id: 'app.settings.security.password-description' })}
+          &nbsp;
           {passwordStrength.strong}
         </Fragment>
       ),
@@ -43,7 +44,7 @@ class SecurityView extends Component {
       description: `${formatMessage(
         { id: 'app.settings.security.phone-description' },
         {}
-      )}：138****8293`,
+      )} 138****8293`,
       actions: [
         <a>
           <FormattedMessage id="app.settings.security.modify" defaultMessage="Modify" />
@@ -64,7 +65,7 @@ class SecurityView extends Component {
       description: `${formatMessage(
         { id: 'app.settings.security.email-description' },
         {}
-      )}：ant***sign.com`,
+      )} ant***sign.com`,
       actions: [
         <a>
           <FormattedMessage id="app.settings.security.modify" defaultMessage="Modify" />
